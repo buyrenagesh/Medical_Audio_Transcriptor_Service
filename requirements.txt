@@ -1,0 +1,6 @@
+FastAPI
+azure-cognitiveservices-speech
+pydantic
+uvicorn
+python-dotenv
+requests
