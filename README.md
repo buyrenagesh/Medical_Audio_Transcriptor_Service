@@ -1,4 +1,4 @@
-Medical Audio Transcription Backend
+# Medical Audio Transcription Backend
 
 This project is a backend service for converting doctor voice dictations into structured medical data using Azure's Speech-to-Text API. It exposes a RESTful API that allows audio uploads or streams, transcribes the audio, identifies key medical entities, matches phrases with internal codes, and returns structured results in JSON format.
 
@@ -32,9 +32,6 @@ uvicorn app.main:app --reload
 
 The API will be available at http://127.0.0.1:8000
 
-
-
-
 Transcription Endpoint
 
 POST /process_audio
@@ -42,8 +39,6 @@ POST /process_audio
   Request Body: Audio file (WAV/ MP3)
   Response: JSON object containing transcribed text and structured
   medical data.
-
-
 
 curl -X POST "http://127.0.0.1:8000/process_audio" -F "file=@path_to_audio_file"
 
