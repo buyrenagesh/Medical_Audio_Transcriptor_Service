@@ -32,6 +32,10 @@ uvicorn app.main:app --reload
 
 The API will be available at http://127.0.0.1:8000
 
+Port can be updated by executing this command 
+uvicorn app.main:app --reload --port 5000 
+
+
 Transcription Endpoint
 
 POST /process_audio
